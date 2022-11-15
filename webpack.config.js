@@ -8,7 +8,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-        template: './src/index.html',
+      template: './src/index.html',
     }),
   ],
   output: {
@@ -17,7 +17,7 @@ module.exports = {
     clean: true,
     publicPath: '/',
   },
-    optimization: {
+  optimization: {
     runtimeChunk: 'single',
   },
 
@@ -30,5 +30,5 @@ module.exports = {
     ],
   },
 
-  mode: 'development'
+  mode: 'development',
 };
