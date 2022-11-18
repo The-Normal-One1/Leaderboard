@@ -2,8 +2,7 @@
 import './style.css';
 import { submit, scoreList, refreshBtn } from './modules/project.js';
 
-submit.addEventListener('click', async (e) => {
-  e.preventDefault();
+submit.addEventListener('click', async () => {
   const userName = document.querySelector('#name');
   const score = document.querySelector('#score');
 

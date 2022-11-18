@@ -24,7 +24,7 @@ To get a local copy up and run git clone https://github.com/The-Normal-One1/Lead
 
 ### Run the index.html file on any browser
 
-## Authors
+## Author
 
 👤 **Ermiyas Demsew**
 
