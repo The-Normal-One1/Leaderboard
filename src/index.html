@@ -8,69 +8,37 @@
   </head>
   <body>
     <header>Leaderboard</header>
+    <!-- <section>
+      <form method="POST" action="#">
+      <input type="text" class="game-field" placeholder="Game Name" />
+      <button type="submit" id="btn-add-game">New Game</button>
+     </form>
+    </section> -->
     <section class="container">
       <div class="left-side">
         <div class="list-title">
           <h1>Recent scores</h1>
           <button class="btn" id="refresh">Refresh</button>
         </div>
-        <!-- <ul>
-          <li>Name:100</li>
-          <li>Name:20</li>
-          <li>Name:50</li>
-          <li>Name:78</li>
-          <li>Name:125</li>
-          <li>Name:72</li>
-          <li>Name:42</li>
-        </ul> -->
-        <table>
-          <tr>
-            <th>Name:</th>
-            <td>10</td>
-          </tr>
-          <tr>
-            <th>Name:</th>
-            <td>20</td>
-          </tr>
-          <tr>
-            <th>Name:</th>
-            <td>50</td>
-          </tr>
-          <tr>
-            <th>Name:</th>
-            <td>78</td>
-          </tr>
-          <tr>
-            <th>Name:</th>
-            <td>125</td>
-          </tr>
-          <tr>
-            <th>Name:</th>
-            <td>77</td>
-          </tr>
-          <tr>
-            <th>Name:</th>
-            <td>42</td>
-          </tr>
-        </table>
+        <ul class="score-list"></ul>
       </div>
       <form action="#" class="form">
-        <h1 class="headform">Add Your Score</h1>
-        <input
-          type="text"
-          name="text"
-          id="name"
-          placeholder="Your Name"
-          required
-        />
-        <input
-          type="number"
-          name="number"
-          id="number"
-          placeholder="Your Score"
-          required
-        />
-        <input type="submit" value="Submit" class="submit" />
+      <h1 class="headform">Add Your Score</h1>
+      <input
+        type="text"
+        name="text"
+        id="name"
+        placeholder="Your Name"
+        required
+      />
+      <input
+        type="number"
+        name="number"
+        id="score"
+        placeholder="Your Score"
+        required
+      />
+      <input type="submit" value="Submit" class="submit" />
       </form>
     </section>
   </body>
