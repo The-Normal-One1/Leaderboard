@@ -1,1 +1,39 @@
-<head><script defer src="main.js"></script></head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Development</title>
+  <script defer src="/runtime.js"></script><script defer src="/main.js"></script></head>
+  <body>
+    <header>Leaderboard</header>
+    <section class="container">
+      <div class="left-side">
+        <div class="list-title">
+          <h1>Recent scores</h1>
+          <button class="btn" id="refresh">Refresh</button>
+        </div>
+        <ul class="score-list"></ul>
+      </div>
+      <form action="#" class="form">
+        <h1 class="headform">Add Your Score</h1>
+        <input
+          type="text"
+          name="text"
+          id="name"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="number"
+          name="number"
+          id="score"
+          placeholder="Your Score"
+          required
+        />
+        <input type="submit" value="Submit" class="submit" />
+      </form>
+    </section>
+  </body>
+</html>
