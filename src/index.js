@@ -2,7 +2,8 @@
 import "./style.css";
 import { submit, scoreList, refreshBtn } from "./modules/project.js";
 
-submit.addEventListener("click", async () => {
+submit.addEventListener("click", async (e) => {
+  e.preventDefault();
   const userName = document.querySelector("#name");
   const score = document.querySelector("#score");
 
@@ -33,6 +34,7 @@ submit.addEventListener("click", async () => {
 // refreshBtn
 
 refreshBtn.addEventListener("click", async () => {
+  scoreList.innerHTML = "";
   try {
     const response = await fetch(
       `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${process.env.API_KEY}/scores/`
@@ -41,7 +43,7 @@ refreshBtn.addEventListener("click", async () => {
     // refresh
     data.result.forEach((item) => {
       const scoreListItem = document.createElement("li");
-      scoreListItem.innerHTML = `${item.user}: ${item.score}`;
+      scoreListItem.innerHTML = `<span class="user-name">${item.user}</span><span class="user-score">${item.score}</span>`;
       scoreList.append(scoreListItem);
     });
   } catch (error) {
