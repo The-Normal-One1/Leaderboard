@@ -57,8 +57,8 @@ header {
   color: white;
   background-color: blueviolet;
 }
-.btn:hover,
-.submit:hover {
+
+.btn:hover {
   cursor: pointer;
 }
 
@@ -67,7 +67,6 @@ ul {
   border-spacing: 0;
   min-height: 200px;
   width: 100%;
-  border: 1px solid rgb(197, 197, 197);
   list-style-type: none;
   box-shadow: 5px 5px rgb(44, 43, 43);
 }
@@ -104,11 +103,16 @@ input {
   width: 50%;
 }
 
+.submit:hover {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     display: flex;
     flex-direction: column;
   }
+
   .form {
     order: -1;
   }
