@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-Please: [Here](https://the-normal-one1.github.io/Leaderboard/dist)
+Please: [Here](https://leaderboard-xdve.onrender.com)
 
 ## Getting Started
 
