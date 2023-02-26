@@ -2,7 +2,7 @@
 
 # Leaderboard
 
-> This is Leaderboard. Please be my guest to read all my work.
+> This is Leaderboard. The template serves for saving game scores and sorting it by the highest ones using API. Please be my guest to read all my work.
 
 ## Built With
 
